@@ -3,10 +3,10 @@ import pyttsx3
 
 def speak(message):
     engine=pyttsx3.init()
-    rate=engine.getProperty('rate')
-    engine.setProperty('rate',rate-20)
+    engine.setProperty('voice', "estonian")
+    engine.setProperty('rate', 150)
+    engine.say('Tere! Minu nimi on Rezwan. Ma olen õpilane. Ma õpin Tartu Ülikoolis.')  #for testing
     engine.say('{}'.format(message))
-    # engine.say("Selleks et valijakaart saada mugavalt oma e-postkasti")
     engine.runAndWait()
 
 r = sr.Recognizer()
