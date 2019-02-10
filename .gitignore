@@ -105,3 +105,6 @@ venv.bak/
 
 
 models/
+*.mp3
+en.txt
+pred.txt
