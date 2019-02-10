@@ -1,5 +1,12 @@
 import speech_recognition as sr
 import pyttsx3
+import sentencepiece as spm
+
+
+r = sr.Recognizer()
+
+sp = spm.SentencePieceProcessor()
+sp.Load("./dataset/sp.en.model")
 
 def speak(message):
     engine=pyttsx3.init()
@@ -9,20 +16,24 @@ def speak(message):
     engine.say('{}'.format(message))
     engine.runAndWait()
 
-r = sr.Recognizer()
+def encodeAndSaveAsText(message):
+    file = open("en.txt", "w")
+    encoded_text = sp.EncodeAsPieces(message)
+    file.write(' '.join(encoded_text))
+    file.close()
+    print("--- encoded ---")
+
+def translate(message):
+    return True
+
+def decode(message):
+    sp.DecodePieces(message)
+
 
 try:
-    while True:
-        with sr.Microphone() as source:
-            print('say something');
-            audio = r.listen(source)
-            print('---time over---')
+    message = "Hello. I am Rezwan. I live in Tallinn. I like to travel. I eat rice, meat and coffee. Yesterday, I went to school."
 
-        try:
-            print('Text: ' + r.recognize_google(audio));
-            speak(r.recognize_google(audio))
-        except:
-            pass
+    encodeAndSaveAsText(message)
 
 except:
     pass
