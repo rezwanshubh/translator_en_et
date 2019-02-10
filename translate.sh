@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+rm ./pred.txt
+rm ./en.txt
+rm ./et.mp3
+
 echo "---initialize---"
 
 python ./speech_to_text.py
@@ -13,4 +17,6 @@ echo "---decode and save as et.mp3---"
 
 python ./play_audio.py
 echo "play done"
+
+
 

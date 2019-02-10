@@ -7,8 +7,5 @@ message = open("pred.txt", "r").read()
 message_decoded = sp.DecodePieces(message.split())
 
 print(message_decoded)
-tts = gTTS(message_decoded)
+tts = gTTS(message_decoded, lang='et')
 tts.save('et.mp3')
-
-#print(message)
-#print(sp.DecodePieces(message))
