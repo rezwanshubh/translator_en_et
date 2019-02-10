@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f50b58e-e34a-44cf-9358-0df5d355d9a2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/decode.py" beforeDir="false" afterPath="$PROJECT_DIR$/decode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/translate.sh" beforeDir="false" afterPath="$PROJECT_DIR$/translate.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,16 +13,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/translate.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="418">
+              <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/decode.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
@@ -90,8 +90,8 @@
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/speech_to_text.py" />
-        <option value="$PROJECT_DIR$/translate.sh" />
         <option value="$PROJECT_DIR$/decode.py" />
+        <option value="$PROJECT_DIR$/translate.sh" />
       </list>
     </option>
   </component>
@@ -252,14 +252,20 @@
       <option name="project" value="LOCAL" />
       <updated>1549811186040</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Delete file when initialize. Performance tuning for speech synthesis.">
+      <created>1549816774005</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1549816774005</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21342795" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21342795" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -270,7 +276,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3291536" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3646813" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3646813" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="bottom" id="Messages" order="11" />
@@ -292,7 +298,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="project initialized." />
     <MESSAGE value="Speech to speech voice translation for English to Estonian working file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Speech to speech voice translation for English to Estonian working file." />
+    <MESSAGE value="Delete file when initialize. Performance tuning for speech synthesis." />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete file when initialize. Performance tuning for speech synthesis." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test_mount_data.py" />
@@ -334,13 +341,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/translate.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/decode.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -348,6 +348,13 @@
           <folding>
             <element signature="e#0#27#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/translate.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
         </state>
       </provider>
     </entry>
