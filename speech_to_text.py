@@ -5,7 +5,7 @@ r = sr.Recognizer()
 
 
 def encodeAndSaveAsText(message):
-    file = open("en.txt", "w")
+    file = open("en.txt", "w", encoding="utf-8")
     sp = spm.SentencePieceProcessor()
     sp.Load("./dataset/sp.en.model")
     encoded_text = sp.EncodeAsPieces(message)
@@ -18,6 +18,7 @@ with sr.Microphone() as source:
 
 try:
     message = r.recognize_google(audio)
+    #message = "Weather is sunny today. Let's go out for a walk."
     print('Text: ' + message);
     encodeAndSaveAsText(message)
 except:

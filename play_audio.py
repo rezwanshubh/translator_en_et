@@ -1,4 +1,5 @@
 import os
+import playsound
 
 file = "et.mp3"
-os.system("mpg123 " + file)
+playsound.playsound('et.mp3', True)
