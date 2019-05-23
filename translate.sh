@@ -16,7 +16,7 @@ python ./decode.py
 echo "---decode and save as et.mp3---"
 
 python ./play_audio.py
-echo "play done"
+echo "---play done---"
 
 rm ./pred.txt
 rm ./en.txt
